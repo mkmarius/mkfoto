@@ -1,0 +1,102 @@
+.main-head {
+  background: $header-color;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  z-index: 99;
+  position: relative;
+}
+/*NAV*/
+
+nav {
+  min-height: 15vh;
+  max-width: 80%;
+  margin: 0 auto;
+  @include flex(space-between, center, row);
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  li {
+    color: white;
+  }
+  .navbar-brand {
+    font-size: 3rem;
+  }
+  .nav-links {
+    a {
+      color: white;
+      &:hover {
+        color: #b3ab4f;
+      }
+    }
+  }
+}
+#logo {
+  width: 100px;
+}
+@keyframes grow {
+  0% {
+    width: 0%;
+    opacity: 1;
+  }
+  100% {
+    width: 5%;
+    opacity: 1;
+  }
+}
+ul {
+  @include flex(space-around, center, row);
+  flex: 1 1 40rem;
+  a {
+    color: white;
+    text-decoration: none;
+    &:focus {
+      border-bottom: 3px solid #b3ab4f;
+    }
+  }
+}
+@media screen and (max-width: 842px) {
+  /* BURGER THING*/
+  .burger {
+    position: absolute;
+    left: 80%;
+    display: block;
+    cursor: pointer;
+  }
+  .burger span {
+    padding: 0.2rem 2rem;
+    background: lightgray;
+    margin: 0.5rem 0rem;
+    display: block;
+    transition: all 0.5s ease;
+  }
+  .nav-links a {
+    color: white;
+    font-size: 50px;
+  }
+  .nav-links {
+    background: gray;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 1s ease;
+  }
+
+  .nav-open {
+    transform: translateX(-100%);
+  }
+  .toggle .line1 {
+    transform: rotateZ(45deg) translateY(300%);
+    background: white;
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotateZ(-45deg) translateY(-300%);
+    background: white;
+  }
+}

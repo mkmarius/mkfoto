@@ -1,0 +1,72 @@
+/*INTRO SECTION*/
+.hero {
+  min-height: 85vh;
+  width: 100%;
+  background: url("../img/edited-9337-web.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+.hero-intro {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -20%);
+  text-align: center;
+  @include flex(center, center, column);
+  p {
+    padding: 5rem 10rem;
+    line-height: 2;
+  }
+  a {
+    color: lavender;
+    width: 80%;
+    border: 3px lavender solid;
+  }
+}
+.cta {
+  width: 30%;
+  padding: 2rem;
+  border: 3px solid $button-color;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  a {
+    text-decoration: none;
+    &:hover {
+      color: rgb(96, 84, 124);
+      text-decoration: none;
+    }
+  }
+  &:hover {
+    background: lavender;
+    color: rgb(96, 84, 124);
+    cursor: pointer;
+  }
+  &:focus {
+    background: lavender;
+  }
+}
+
+h2 {
+  text-align: center;
+  position: relative;
+  font-weight: 500;
+  top: 5rem;
+}
+
+@media only screen and (max-width: 860px) {
+  .hero-intro {
+    left: 30%;
+    margin-left: 1rem;
+    h2 {
+      font-size: 3rem;
+    }
+    .intro-text {
+      font-size: 2.5rem;
+    }
+    .cta {
+      font-size: 3rem;
+      width: 60%;
+      padding: 1rem;
+    }
+  }
+}

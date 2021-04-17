@@ -1,0 +1,23 @@
+footer {
+  background: $footer-color;
+  @include flex(center, center, row);
+  width: 100%;
+  min-height: 10vh;
+  font-size: $text;
+  color: white;
+  h4 {
+    flex: 2 1 40rem;
+    margin-left: 4rem;
+  }
+  ul {
+    @include flex(space-around, center, row);
+    flex: 1 1 40rem;
+  }
+  img {
+    margin: 1rem 0;
+    width: 4rem;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

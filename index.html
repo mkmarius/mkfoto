@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional photographer for personal photoshoots and events!"
+    />
+    <meta name="robots" content="index, follow" />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Josefin+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/lightbox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="icons/logo-new.svg" />
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      $(document).ready(function() { 
+        $(function() { 
+          let name = document.getElementById('name');
+          let email = document.getElementById('email');
+          let subject = document.getElementById('subject');
+          let textArea = document.querySelector('textarea');
+            name.value = " ";
+            email.value = " ";
+            subject.value = " ";
+            textArea.value = " ";
+         });
+       });
+
+    </script>
+    <title>MKPhotography</title>
+  </head>
+  <body>
+      <header class="main-head">
+        <nav class="navbar">
+          <!-- <h1 id="logo" class="navbar-brand">Marius K. Photography</h1> -->
+          
+          <ul class="nav-links">
+            <li class="">
+              <a href="#home" class="nav-link "> Home</a>
+            </li>
+            <li>
+              <a href="#gallery" class="nav-link"> Gallery</a>
+            </li>
+            <img src="./img/logo-new-white.png" alt="logo" data-aos="fade-in" id="logo">
+            <li>
+              <a href="#about" class="nav-link"> About</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-link"> Contact</a>
+            </li>
+            </ul>
+            <div class="burger">
+              <span class="line1"></span>
+              <span class="line2"></span>
+              <span class="line3"></span>
+            </div>
+        </nav>
+      </header>
+      <main>
+        <section class="hero m-0"id="home">
+          <div class="hero-intro">
+        
+          <h2>Marius Krenevičius</h2>
+          <p class="intro-text">
+            Photographer <br />
+            Web Designer
+          </p>
+          <a href="#gallery" class="cta">Gallery</a>
+        </div>
+          <div class="top">
+            <a href="#home"
+              ><img src="./icons/iconmonstr-arrow-66.png" alt="arrow to top"
+            /></a>
+          </div>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+          <ul class="image-nav ">
+            <li class="active">
+              <a href="#gallery" data-filter="nature" class="nav-photo "> Nature</a>
+            </li>
+            <li>
+              <a href="#gallery" data-filter="urban" class="nav-photo"> Urban</a>
+            </li>
+            <li>
+              <a href="#gallery" data-filter="portraits" class="nav-photo">
+                Portraits</a
+              >
+            </li>
+          </ul>
+          <!--NATURE PHOTOGRAPHY-->
+          <div class="image-gallery" data-aos="fade-in">
+            <div class="photo filter nature">
+              <a href="./img/DSCF7342 - Big.jpg" data-lightbox="nature">
+                <img src="./img/DSCF7342-web.jpg" alt="tree" />
+              </a>
+            </div>
+            <div class="photo filter nature">
+              <a href="./img/DSCF6619 - Big.jpg" data-lightbox="nature">
+                <img src="./img/DSCF6619-web.jpg" alt="waterfall" />
+              </a>
+            </div>
+            <div class="photo filter nature">
+              <a href="./img/edited-5933-big.jpg" data-lightbox="nature">
+                <img src="./img/edited-5933-web.jpg" alt="fjord" />
+              </a>
+            </div>
+            <div class="photo filter nature">
+              <a href="./img/edited-6084-big.jpg" data-lightbox="nature">
+                <img src="./img/edited-6084-web.jpg" alt="lake" />
+              </a>
+            </div>
+            <div class="photo filter nature">
+              <a href="./img/DSCF7484 - Big.jpg" data-lightbox="nature">
+                <img src="./img/DSCF7484-web.jpg" alt="path" />
+              </a>
+            </div>
+            <div class="photo filter nature">
+              <a href="./img/edited-9499-big.jpg" data-lightbox="nature">
+                <img src="./img/edited-9499-web.jpg" alt="forestry mountains" />
+              </a>
+            </div> 
+            <!--URBAN PHOTOGRAPHY-->
+            <div class="photo filter urban urban-1">
+              <a href="./img/edited-8051-big.jpg" data-lightbox="urban">
+                <img src="./img/edited-8051-web.jpg" alt="london skyscrapers" />
+              </a>
+            </div>
+            <div class="photo filter urban urban-2">
+              <a href="./img/edited-7604-big.jpg" data-lightbox="urban">
+                <img src="./img/edited-7604-web.jpg" alt="train" />
+              </a>
+            </div>
+            <div class="photo filter urban urban-3">
+              <a href="./img/edited-7607-big.jpg" data-lightbox="urban">
+                <img src="./img/edited-7607-web.jpg" alt="view throught the bus window" />
+              </a>
+            </div>
+            <div class="photo filter urban urban-4">
+              <a href="./img/edited-7630-big.jpg" data-lightbox="urban">
+                <img src="./img/edited-7630-web.jpg" alt="car" />
+              </a>
+            </div>
+            <div class="photo filter urban urban-5">
+              <a href="./img/edited-5215-big.jpg" data-lightbox="urban">
+                <img src="./img/edited-5215-web.jpg" alt="oslo opera theatre" />
+              </a>
+            </div>
+            <!--PORTRAIT PHOTOGRAPHY-->
+            <div class="photo filter portraits portraits-1">
+              <a href="./img/_DSC5993-big.jpg" data-lightbox="portraits">
+                <img src="./img/_DSC5993-web.jpg" alt="boy portrait" />
+              </a>
+            </div>
+            <div class="photo filter  portraits portraits-2">
+              <a href="./img/edited-big.jpg" data-lightbox="portraits">
+                <img src="./img/edited-web.jpg" alt="girl portrait" />
+              </a>
+            </div>
+            <div class="photo filter portraits portraits-3">
+              <a href="./img/_DSC5966 fixed-big.jpg" data-lightbox="portraits">
+                <img src="./img/_DSC5966 fixed-web.jpg" alt="boy smile bw" />
+              </a>
+            </div>
+ 
+            <div class="photo filter portraits portraits-4">
+              <a href="./img/_DSC6111-big.jpg" data-lightbox="portraits">
+                <img src="./img/_DSC6111-web.jpg" alt="boy near a building" />
+              </a>
+            </div>
+            <div class="photo filter portraits portraits-5">
+              <a href="./img/Done-1781.png" data-lightbox="portraits">
+                <img src="./img/Done-1781-web.png" alt="boy near the trees" />
+              </a>
+            </div> 
+          </div>
+          </div>
+        </section>
+
+        <section class="about-section" id="about">
+          <div class="about-image"  data-aos="fade-right">
+            <img src="./img/edited-7681-web.jpg" alt="me with a camera" />
+          </div>
+          <div class="about-text" data-aos="fade-left">
+            Marius Krenevičius is a photographer and a web designer who is
+            passionate about traveling the world and nature and has been from a
+            young age. When he took his first photo, he knew that the world was
+            too interesting and beautiful to not document it. At 21 years old he
+            has already been to 20 countries around Europe and doesn't plan to
+            stop. Marius got introduced to photography by his father, who is
+            always taking pictures to document the trips and to be able to
+            remember them later. Marius decided to do so as well and that
+            remained the most important reason for photography to him.
+          </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+          <h2 class="contact-head">Contact</h2>
+          <form id="contact-form" data-aos="fade-in">
+            <label for="name">Name</label>
+            <input name="name" type="text" class="form-control" id="name" class="formInput"  required/>
+            <label for="email">Email</label>
+            <input name="email" type="email" class="form-control" id="email" class="formInput"  />
+            <label for="subject">Subject</label>
+            <input name="subject" type="text" class="form-control" id="subject" class="formInput" required/>
+            <label for="message" >Message</label>
+            <textarea
+              name="message"
+              class="form-control"
+              cols="30"
+              row="10" id="message"
+              required
+            ></textarea>
+            <input type="button"
+              class="form-control submit"
+              value="Send message"
+            />
+          </form>
+        </section>
+      </main>
+      <footer>
+        <h4>Marius Krenevičius &copy; 2020</h4>
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/th3marius/" target="_blank"
+              ><img src="./icons/instagram 1.svg" alt="instagram-social"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/mariuskphoto" target="_blank"
+              ><img src="./icons/twitter 1.svg" alt="twitter-social"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/marius-krenevi%C4%8Dius-1a2581190/" target="_blank"
+              ><img src="./icons/linked-in-white.png" alt="linkedin-social"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </main>
+    <script src="./js/burger-menu.js"></script>
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="js/filter-gallery.js"></script>
+    <script src="js/contact.js"></script> 
+    <script src="js/notify.js"></script> 
+    <script>
+      lightbox.option({
+        positionFromTop: 150,
+        wrapAround: true,
+      });
+    </script>
+  <script>
+    AOS.init({
+        offset: 400, // offset (in px) from the original trigger point
+        delay: 250, // values from 0 to 3000, with step 50ms
+        duration: 800 // values from 0 to 3000, with step 50ms
+      });
+  </script>
+    </script>
+  </body>
+</html>
+
+<!--
+Image gallery was created using Lightbox2  which is licensed under The MIT License.
+Created by Lokesh Dhakar: https://lokeshdhakar.com/
+
+
+The MIT License (MIT)
+
+Copyright (c) 2015 Lokesh Dhakar
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-->

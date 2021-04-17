@@ -1,0 +1,112 @@
+.gallery-section {
+  background: $background-color;
+  min-height: 100vh;
+}
+.image-nav {
+  @include flex(space-evenly, center, row);
+  font-size: $nav;
+  padding-top: 5rem;
+  flex-wrap: wrap;
+  a {
+    color: rgb(68, 63, 63);
+    &:focus {
+      border: 3px solid #b3ab4f;
+    }
+    &:hover {
+      color: #b3ab4f;
+    }
+  }
+  li {
+    margin-bottom: 2rem;
+  }
+  li.active {
+    border-bottom: 3px solid #b3ab4f;
+    font-weight: 500;
+  }
+}
+.image-gallery {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, minmax(30rem, 1fr));
+  grid-template-rows: auto;
+  text-align: center;
+  img {
+    grid-row: auto;
+    grid-column: auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s linear;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s linear;
+    }
+    &:focus {
+      border: 1px solid white;
+    }
+  }
+  .urban-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .urban-3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .urban-4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .urban-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .urban-5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .portraits-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .portraits-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .portraits-3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .portraits-4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .portraits-5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
